@@ -2,29 +2,24 @@ html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: rgb(243, 233, 219);
+    background-color: rgb(66, 102, 55);
     font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
 }
 
-nav a {
-    display: inline-block;
-    margin: 0.2em 0.2em;
-    padding: 0.2em 1em;
-    background-color: rgb(255, 250, 242);
-    color: darkgreen;
-    font-family: sans-serif;
-    font-size: large;
+nav {
+    display: block;
+    width: 100%;
 }
 
-div.home {
-    border-radius: 1em;
-    filter: drop-shadow(10px 5px 2px #bfb38d);
-    display: flow-root;
-    margin: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    width: min(100%, 65em);
-    background-color: rgb(255, 250, 242);
+nav ul {
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: large;
+    text-decoration: none;
 }
 
 img.splash {
@@ -34,13 +29,23 @@ img.splash {
     margin-right: auto;
 }
 
+div.home {
+    border-radius: 1em;
+    filter: drop-shadow(10px 5px 2px darkgreen);
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    width: min(90%, 65em);
+    background-color: rgb(225, 232, 202);
+}
+
 div.homecontent {
     text-align: center;
-    float: left;
     line-height: 150%;
     margin: 1em;
     margin-left: auto;
     margin-right: auto;
     padding: 1em;
-    width: max(30em, 40%);
 }
