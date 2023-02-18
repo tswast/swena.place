@@ -1,25 +1,30 @@
+:root {
+    --main-bg-color: rgb(66, 102, 55);
+}
+
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: rgb(66, 102, 55);
-    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-}
-
-nav {
-    display: block;
-    width: 100%;
-}
-
-nav ul {
-    list-style: none;
-}
-
-nav a {
     color: white;
-    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
-    font-size: large;
-    text-decoration: none;
+    background-color: var(--main-bg-color);
+    font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    color: white;
+}
+
+img {
+    display: block;
+    width: min(80%, 50em);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 img.splash {
@@ -29,23 +34,45 @@ img.splash {
     margin-right: auto;
 }
 
-div.home {
-    border-radius: 1em;
-    filter: drop-shadow(10px 5px 2px darkgreen);
-    display: flex;
-    flex-wrap: wrap;
-    margin: 2em;
-    margin-left: auto;
-    margin-right: auto;
-    width: min(90%, 65em);
-    background-color: rgb(225, 232, 202);
+div.coverimage {
+    background-color: var(--main-bg-color);
+    margin: 0;
+    padding: 0;
+    height: 40vh;
+    width: 100%;
 }
 
-div.homecontent {
-    text-align: center;
-    line-height: 150%;
-    margin: 1em;
+h2#homedate {
+    text-decoration: underline;
+}
+
+h2.subtle {
+    font-weight: normal;
+}
+
+div.content h1 {
+    position: sticky;
+    top: 0px;
+    padding: 15px;
+    background-color: var(--main-bg-color);
+    text-transform: uppercase;
+}
+
+div.content h1 a {
+    text-decoration: none;
+    color: white;
+}
+
+div.prose {
+    text-align: left;
+    max-width: 40em;
     margin-left: auto;
     margin-right: auto;
-    padding: 1em;
+}
+
+div.content {
+    text-align: center;
+    line-height: 150%;
+    margin: 0;
+    padding: 0;
 }
