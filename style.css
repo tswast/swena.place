@@ -1,12 +1,13 @@
 :root {
-    --main-bg-color: rgb(66, 102, 55);
+    --main-bg-color: white;
+    --main-text-color: rgb(66, 102, 55);
 }
 
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    color: white;
+    color: var(--main-text-color);
     background-color: var(--main-bg-color);
     font-family: Optima, Segoe, "Segoe UI", Candara, Calibri, Arial, sans-serif;
     scroll-behavior: smooth;
@@ -17,7 +18,7 @@ p {
 }
 
 a {
-    color: white;
+    color: var(--main-text-color);
 }
 
 img {
@@ -38,7 +39,7 @@ div.coverimage {
     background-color: var(--main-bg-color);
     margin: 0;
     padding: 0;
-    height: 40vh;
+    height: 15vh;
     width: 100%;
 }
 
@@ -60,7 +61,7 @@ div.content h1 {
 
 div.content h1 a {
     text-decoration: none;
-    color: white;
+    color: var(--main-text-color);
 }
 
 div.prose {
