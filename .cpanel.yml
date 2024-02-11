@@ -1,0 +1,5 @@
+# https://www.namecheap.com/support/knowledgebase/article.aspx/10113/2210/how-to-use-git-version-control-cpanel-plugin/#deployment
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/nctests/git.nctest.info/
+    - cp -r * $DEPLOYPATH
